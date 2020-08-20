@@ -37,7 +37,7 @@ while(True):
 	#print(soup)
 
 #判斷這一頁目錄有沒有文章(有就接下一步，沒有就break)
-#值得注意的是，這裡查詢每個目錄頁是否存在.writer而不是用.title的原因為，在該目錄頁沒有文章時還是有.title標籤，所以選擇.writer為判斷依據
+#值得注意的是，這裡判斷每個目錄頁是否有文章存在的標籤是選擇.writer而不是用.title的原因為：在該目錄頁沒有文章時還是有其他的.title標籤，所以選擇.writer為判斷依據
 	if soup.select(".writer"):
 		pass
 	else:

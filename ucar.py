@@ -48,7 +48,7 @@ while(True):
 #抓發文日期
 	#迴圈soup_find1這個list
 	for i in range(len(soup_find1)):
-		#第一頁且list前兩項0,1是廣告，所以continue
+		#第一頁且list前兩項0,1是置頂廣告，所以continue
 		if (z == 1 and i <= 1):
 			continue
 		b = soup_find1[i].find('div', 'postby margin-right-10').find('p').text
